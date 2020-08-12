@@ -38,7 +38,7 @@ def parseManga():
 def tweet():
     (manga_title, manga_status, manga_score, manga_url) = parseManga()
     print ('TWEETING')
-    twitter.update_status(status=f'{manga_title} \nStatus: {manga_status} \n{manga_status} \nScore: {manga_score} \nMAL: {manga_url}')
+    twitter.update_status(status=f'{manga_title} \nStatus: {manga_status} \nScore: {manga_score} \nMAL: {manga_url}')
 
 while True:
     tweet()
